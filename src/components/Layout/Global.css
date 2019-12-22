@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700|Oswald:400,500,600,700&display=swap');
+
+:root {
+  --mainFill: #111;
+  --otherFill: #3f3f3f;
+  --accentFill: #003ce6;
+  --mainFont: 'IBM Plex Sans', sans-serif;
+  --otherFont: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--mainFont);
+  color: var(--mainFill);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  display: inline-block;
+  color: currentColor;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+
+.primaryButton,
+.secondaryButton {
+  font-weight: 500;
+  display: inline-block;
+  font-family: var(--otherFont);
+  text-transform: uppercase;
+}
+
+.primaryButton {
+  background: var(--accentFill);
+  color: #fff;
+  padding: 0.75rem 2rem;
+}
+
+.secondaryButton {
+  background: #fff;
+  color: var(--mainFill);
+  padding: 0.5rem 1.5rem;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.transparent {
+  background: transparent;
+  color: #fff;
+}
+
+.transparent .burger span {
+  background: #fff;
+}
+
+.white {
+  background: #fff;
+  color: var(--mainFill) !important;
+  border-color: #eee !important;
+}
+
+.white .burger span {
+  background: var(--mainFill) !important;
+}
+
+.muted {
+  opacity: 0.825;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}
